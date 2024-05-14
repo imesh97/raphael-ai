@@ -69,7 +69,7 @@ export const plans = [
   },
   {
     _id: 2,
-    name: "Pro Package",
+    name: "Raphael Plus",
     icon: "/assets/icons/free-plan.svg",
     price: 40,
     credits: 120,
@@ -94,7 +94,7 @@ export const plans = [
   },
   {
     _id: 3,
-    name: "Premium Package",
+    name: "Raphael Ultra",
     icon: "/assets/icons/free-plan.svg",
     price: 199,
     credits: 2000,
