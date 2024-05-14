@@ -79,7 +79,7 @@ export const ImageCollection = ({
             </p>
 
             <Button
-              className="button w-32 bg-purple-gradient bg-cover text-white"
+              className="button w-32 bg-main-gradient bg-cover text-white"
               onClick={() => onPageChange("next")}
               disabled={Number(page) >= totalPages}>
               <PaginationNext className="hover:bg-transparent hover:text-white" />
