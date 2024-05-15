@@ -180,7 +180,7 @@ const TransformationForm = ({
     return onChangeField(value);
   };
 
-  const onTransformHandler = async () => {
+  const onTransformHandler: () => Promise<void> = async () => {
     setIsTransforming(true);
     setTransformationConfig(
       deepMergeObjects(newTransformation, transformationConfig)
