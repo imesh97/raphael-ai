@@ -24,31 +24,31 @@ const SidebarNav = () => {
         </Link>
 
         <nav className="sidebar-nav">
-          <SignedIn>
-            <ul className="sidebar-nav_elements">
-              {navLinks.slice(0, 6).map((link) => {
-                const isActive = link.route === pathname;
+          <ul className="sidebar-nav_elements">
+            {navLinks.slice(0, 6).map((link) => {
+              const isActive = link.route === pathname;
 
-                return (
-                  <li
-                    key={link.route}
-                    className={`sidebar-nav_element group ${
-                      isActive ? "bg-main-gradient text-white" : "text-gray-700"
-                    }`}>
-                    <Link className="sidebar-link" href={link.route}>
-                      <Image
-                        src={link.icon}
-                        alt="Logo"
-                        width={24}
-                        height={24}
-                        className={`${isActive && "brightness-200"}`}
-                      />
-                      {link.label}
-                    </Link>
-                  </li>
-                );
-              })}
-            </ul>
+              return (
+                <li
+                  key={link.route}
+                  className={`sidebar-nav_element group ${
+                    isActive ? "bg-main-gradient text-white" : "text-gray-700"
+                  }`}>
+                  <Link className="sidebar-link" href={link.route}>
+                    <Image
+                      src={link.icon}
+                      alt="Logo"
+                      width={24}
+                      height={24}
+                      className={`${isActive && "brightness-200"}`}
+                    />
+                    {link.label}
+                  </Link>
+                </li>
+              );
+            })}
+          </ul>
+          <SignedIn>
             <ul className="sidebar-nav_elements">
               {navLinks.slice(6).map((link) => {
                 const isActive = link.route === pathname;
@@ -79,9 +79,19 @@ const SidebarNav = () => {
           </SignedIn>
 
           <SignedOut>
-            <Button asChild className="button bg-main-gradient bg-cover">
-              <Link href="/sign-in">Sign In</Link>
-            </Button>
+            <div className="hidden flex-col w-full items-start gap-2 md:flex">
+              <Button
+                asChild
+                className="button bg-main-gradient bg-cover w-full p-16-semibold whitespace-nowrap rounded-md transition-all">
+                <Link href="/login">Login</Link>
+              </Button>
+              <Button
+                asChild
+                className="button w-full p-16-semibold whitespace-nowrap rounded-md transition-all"
+                variant="outline">
+                <Link href="/register">Register</Link>
+              </Button>
+            </div>
           </SignedOut>
         </nav>
       </div>

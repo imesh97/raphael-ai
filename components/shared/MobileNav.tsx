@@ -55,14 +55,13 @@ const MobileNav = () => {
                 <ul className="header-nav_elements">
                   {navLinks.map((link) => {
                     const isActive = link.route === pathname;
-                    // fQY3SCIrCaWzm6iQ
 
                     return (
                       <li
                         key={link.route}
                         className={`${
-                          isActive && "gradient-text"
-                        } p-18 flex whitespace-nowrap text-dark-700`}>
+                          isActive && "font-bold"
+                        } p-18 flex whitespace-nowrap text-gray-800`}>
                         <Link
                           className="sidebar-link cursor-pointer"
                           href={link.route}>
@@ -84,8 +83,10 @@ const MobileNav = () => {
         </SignedIn>
 
         <SignedOut>
-          <Button asChild className="button bg-main-gradient bg-cover">
-            <Link href="/sign-in"></Link>
+          <Button
+            asChild
+            className="button bg-main-gradient bg-cover w-full p-16-semibold whitespace-nowrap rounded-md transition-all">
+            <Link href="/login">Login</Link>
           </Button>
         </SignedOut>
       </nav>

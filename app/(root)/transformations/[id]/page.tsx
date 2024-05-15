@@ -20,7 +20,7 @@ const ImageDetails = async ({ params: { id } }: SearchParamProps) => {
       <section className="mt-5 flex flex-wrap gap-4">
         <div className="p-14-medium md:p-16-medium flex gap-2">
           <p className="text-dark-600">Transformation:</p>
-          <p className=" capitalize text-main-400">
+          <p className=" capitalize text-main-500">
             {image.transformationType}
           </p>
         </div>
@@ -30,7 +30,7 @@ const ImageDetails = async ({ params: { id } }: SearchParamProps) => {
             <p className="hidden text-dark-400/50 md:block">&#x25CF;</p>
             <div className="p-14-medium md:p-16-medium flex gap-2 ">
               <p className="text-dark-600">Prompt:</p>
-              <p className=" capitalize text-main-400">{image.prompt}</p>
+              <p className=" capitalize text-main-500">{image.prompt}</p>
             </div>
           </>
         )}
@@ -40,7 +40,7 @@ const ImageDetails = async ({ params: { id } }: SearchParamProps) => {
             <p className="hidden text-dark-400/50 md:block">&#x25CF;</p>
             <div className="p-14-medium md:p-16-medium flex gap-2">
               <p className="text-dark-600">Color:</p>
-              <p className=" capitalize text-main-400">{image.color}</p>
+              <p className=" capitalize text-main-500">{image.color}</p>
             </div>
           </>
         )}
@@ -50,7 +50,7 @@ const ImageDetails = async ({ params: { id } }: SearchParamProps) => {
             <p className="hidden text-dark-400/50 md:block">&#x25CF;</p>
             <div className="p-14-medium md:p-16-medium flex gap-2">
               <p className="text-dark-600">Aspect Ratio:</p>
-              <p className=" capitalize text-main-400">{image.aspectRatio}</p>
+              <p className=" capitalize text-main-500">{image.aspectRatio}</p>
             </div>
           </>
         )}

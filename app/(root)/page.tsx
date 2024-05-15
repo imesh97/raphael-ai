@@ -15,14 +15,15 @@ const Home = async ({ searchParams }: SearchParamProps) => {
     <>
       <section className="home">
         <h1 className="home-heading">
-          Unleash your creative vision with Raphael
+          Supercharge your creativity with{" "}
+          <span className="font-bold">Raphael</span>
         </h1>
-        <ul className="flex-center w-full gap-20">
+        <ul className="flex-center w-full gap-20 md:mt-2">
           {navLinks.slice(1, 5).map((link) => (
             <Link
               key={link.route}
               href={link.route}
-              className="flex-center flex-col gap-2">
+              className="flex-center flex-col gap-3">
               <li className="flex-center w-fit rounded-full bg-white p-4">
                 <Image src={link.icon} alt="image" width={24} height={24} />
               </li>
