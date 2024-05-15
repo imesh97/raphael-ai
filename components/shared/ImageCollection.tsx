@@ -61,7 +61,7 @@ export const ImageCollection = ({
       ) : (
         <div className="collection-empty">
           <p className="p-20-semibold">
-            Oops, no images have been transformed yet!
+            Oops, looks like we have no images here!
           </p>
         </div>
       )}
