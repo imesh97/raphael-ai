@@ -25,16 +25,16 @@ module.exports = {
         foreground: "hsl(var(--foreground))",
         main: {
           100: "#F4F7FE",
-          200: "#BCB6FF",
-          400: "#868CFF",
-          500: "#7857FF",
-          600: "#4318FF",
+          200: "#F9D3E0",
+          400: "#E0AFC1",
+          500: "#DC2626",
+          600: "#A30000",
         },
         dark: {
           400: "#7986AC",
-          500: "#606C80",
-          600: "#2B3674",
-          700: "#384262",
+          500: "#303640",
+          600: "#333333",
+          700: "#0d0d0d",
         },
         primary: {
           DEFAULT: "hsl(var(--primary))",
@@ -66,7 +66,7 @@ module.exports = {
         },
       },
       fontFamily: {
-        IBMPlex: ["var(--font-ibm-plex)"],
+        main: ["var(--font-main)"],
       },
       backgroundImage: {
         "main-gradient": "url('/assets/images/gradient-bg.svg')",

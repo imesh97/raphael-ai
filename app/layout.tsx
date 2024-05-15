@@ -1,14 +1,14 @@
 import type { Metadata } from "next";
-import { IBM_Plex_Sans } from "next/font/google";
+import { Poppins } from "next/font/google";
 import { cn } from "@/lib/utils";
 import { ClerkProvider } from "@clerk/nextjs";
 
 import "./globals.css";
 
-const IBMPlex = IBM_Plex_Sans({
+const FontMain = Poppins({
   subsets: ["latin"],
-  weight: ["400", "500", "600", "700"],
-  variable: "--font-ibm-plex",
+  weight: ["400", "500", "600", "700", "900"],
+  variable: "--font-main",
 });
 
 export const metadata: Metadata = {
@@ -24,10 +24,10 @@ export default function RootLayout({
   return (
     <ClerkProvider
       appearance={{
-        variables: { colorPrimary: "#624cf5" },
+        variables: { colorPrimary: "#dc2626" },
       }}>
       <html lang="en">
-        <body className={cn("font-IBMPlex antialiased", IBMPlex.variable)}>
+        <body className={cn("font-main antialiased", FontMain.variable)}>
           {children}
         </body>
       </html>
