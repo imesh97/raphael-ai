@@ -20,7 +20,7 @@ const Credits = async () => {
     <>
       <Header
         title="Get Credits"
-        subtitle={`Purchase a credit package to continue creating with Raphael.`}
+        subtitle={`Purchase a credit package to continue creating with Raphael`}
       />
 
       <section>
