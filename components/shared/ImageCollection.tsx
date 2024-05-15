@@ -48,7 +48,7 @@ export const ImageCollection = ({
   return (
     <>
       <div className="collection-heading">
-        <h2 className="h2-bold text-dark-600">Recent Edits</h2>
+        <h2 className="h2-bold text-dark-600">Recent Creations</h2>
         {hasSearch && <Search />}
       </div>
 
@@ -60,7 +60,9 @@ export const ImageCollection = ({
         </ul>
       ) : (
         <div className="collection-empty">
-          <p className="p-20-semibold">No images have been uploaded yet!</p>
+          <p className="p-20-semibold">
+            Oops, no images have been transformed yet!
+          </p>
         </div>
       )}
 
